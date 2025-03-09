@@ -20,7 +20,7 @@
     #footer {
         width: calc(100vw - 82px);
         margin-left: auto;
-        padding-bottom: 6rem;
+        /* padding-bottom: 6rem; */
     }
 }
 
@@ -183,6 +183,7 @@
   #footer {
     flex-direction: column;
     text-align: center;
+    bottom: 0;
   }
 
   .address, .contact {

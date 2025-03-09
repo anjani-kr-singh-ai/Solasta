@@ -14,12 +14,12 @@ const EventCats = () => {
   const navigate = useNavigate();
 
   const categories = [
-    { img: cat3, category: "Technical Events", title: "Technical Events", description: "Engage in hands-on technical challenges and innovations." },
+    { img: cat3, category: "Technical Events", title: "Technical Events", description: "Show off your ingenuity in engaging, hands-on technical challenges and competitions." },
     { img: cat4, category: "Literature", title: "Literature Events", description: "Explore the world of literature and creative writing." },
     { img: cat5, category: "Esports", title: "Esports", description: "Compete in thrilling online and offline gaming tournaments." },
-    { img: cat6, category: "Fun Games", title: "Fun Games", description: "Compete in thrilling online and offline gaming tournaments." },
-    { img: cat7, category: "Digital Arts", title: "Digital Arts", description: "Compete in thrilling online and offline gaming tournaments." },
-    { img: cat8, category: "Pronites", title: "Pronites", description: "Compete in thrilling online and offline gaming tournaments." },
+    { img: cat6, category: "Fun Games", title: "Fun Games", description: "Dive into cheerful and entertaining games, perfect for bonding and relaxation." },
+    { img: cat7, category: "Digital Arts", title: "Digital Arts", description: "Unleash your imagination in vibrant digital art contests and displays." },
+    { img: cat8, category: "Pronites", title: "Pro Nights", description: "Experience captivating performances and thrilling entertainment every night" },
   ];
 
   useEffect(() => {

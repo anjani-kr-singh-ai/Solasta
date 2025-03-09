@@ -81,7 +81,7 @@
 .styled-register-button {
     background: linear-gradient(135deg, #ff6f00, #f45730); 
     color: #fff; 
-    padding: 12px 24px;
+    padding: 2px ;
     border: 2px solid #fff;
     border-radius: 10px;
     cursor: pointer;
@@ -101,16 +101,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 300%;
-    height: 300%;
+    width: 100%;
+    height: 100%;
     background: rgba(255, 255, 255, 0.15);
     transition: all 0.3s ease;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .styled-register-button:hover::before {
-    width: 400%;
-    height: 400%;
+    width: 300%;
+    height: 300%;
 }
 
 .styled-register-button:hover {

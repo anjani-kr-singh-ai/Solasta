@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="sm:grid grid-cols-1 gap-3  md:grid-cols-2  xl:grid-cols-3">
               <a className="contact-link" href="tel:9908267729">
                 <img className="contact-icon" src={callIcon} alt="" />
-                Pavan Sai
+                Contact
               </a>
 
 
