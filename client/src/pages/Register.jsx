@@ -45,8 +45,8 @@ export default function Register() {
           {/* Role Selection */}
           {!role && (
             <div className="role-selection">\
-              <button className="submit-btn" onClick={() => setRole("student")}>Student</button>
-              <button className="submit-btn" onClick={() => setRole("outsider")}>Outsider</button>
+              <button className="submit-btn" onClick={() => setRole("student")}>IIITDMK Students</button>
+              <button className="submit-btn" onClick={() => setRole("outsider")}>Other Students</button>
             </div>
           )}
 
