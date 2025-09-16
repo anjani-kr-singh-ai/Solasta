@@ -11,7 +11,7 @@ export default function Register() {
   1. Access to attend all events
   2. Access to participate in all events
   3. Access to attend Pronites (Celebrity Night, Rock Night, Fashion Show, DJ Night)
-  4. Solasta’24 Official Merch (T-shirt) is compulsory for attending the events.
+  4. Solasta’25 Official Merch (T-shirt) is compulsory for attending the events.
   `;
 
   const outsider300 = `Solasta Pass - ₹300
@@ -45,8 +45,8 @@ export default function Register() {
           {/* Role Selection */}
           {!role && (
             <div className="role-selection">\
-              <button className="submit-btn" onClick={() => setRole("student")}>Student</button>
-              <button className="submit-btn" onClick={() => setRole("outsider")}>Outsider</button>
+              <button className="submit-btn" onClick={() => setRole("student")}>IIITDMK Students</button>
+              <button className="submit-btn" onClick={() => setRole("outsider")}>Other Students</button>
             </div>
           )}
 

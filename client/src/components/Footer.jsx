@@ -1,81 +1,75 @@
 import React from "react";
-// import anahataLogo from "../images/images/footer_logo.png";
 import logo from "../assets/footerlogo.png";
 import instagram from "../assets/images/social/ig.svg";
 import youtube from "../assets/images/social/yt.svg";
 import whatsapp from "../assets/images/social/wp.svg";
 import callIcon from "../assets/images/social/call.svg";
 import mailIcon from "../assets/images/social/mail.svg";
-import "./Footer.css"
 import { Icon } from "@iconify/react";
+import "./Footer.css";
+
 export default function Footer() {
   return (
-    <>
-      <div id="footer">
-        <div className="address">
-          <img className="footer-logo" src={logo} alt="Anahata" />
+    <footer className="footer-container">
+      <div id="footer" className="main-footer">
+        <div className="address-section">
+          <div className="logo-container">
+            <img className="footer-logo pulse-animation" src={logo} alt="Anahata" />
+          </div>
           <p className="college-address">
-            Indian Institute of Information Technology Design and Manufacturing, Kurnool, Andhra Pradesh (518008), INDIA
+            Indian Institute of Information Technology Design and Manufacturing, 
+            Kurnool, Andhra Pradesh (518008), INDIA
           </p>
         </div>
-
-        <div className="contact">
+        
+        <div className="contact-section">
           <div className="contact-details">
-            <p className="contact-header">Contact Us</p>
-            {/* <p>Coordinator : </p> */}
-            <div className="sm:grid grid-cols-1 gap-3  md:grid-cols-2  xl:grid-cols-3">
-              <a className="contact-link" href="tel:7999548368">
-                <img className="contact-icon" src={callIcon} alt="" />
-                Pavan Sai
+            <h3 className="contact-header">Connect with Us</h3>
+            <div className="contact-grid">
+              <a className="contact-link hover-effect" href="tel:9908267729">
+                <img className="contact-icon" src={callIcon} alt="Call" />
+                <span>Contact</span>
               </a>
-
-
             </div>
-
-
           </div>
-          <div className="social">
-            <a href="https://www.instagram.com/iiitk.solasta?igsh=MWExODFwMXhucGxreA==" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="Instagram" />
+          
+          <div className="social-links">
+            <a className="social-icon-wrapper" href="https://www.instagram.com/iiitk.solasta?igsh=MWExODFwMXhucGxreA==" target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="Instagram" className="social-icon" />
             </a>
-
-
-            <a href="https://youtube.com/@iiitksolasta?feature=shared " target="
-            _blank" rel="noopener noreferrer">
-              <img src={youtube} alt="Youtube" />
+            <a className="social-icon-wrapper" href="https://youtube.com/@iiitksolasta?feature=shared" target="_blank" rel="noopener noreferrer">
+              <img src={youtube} alt="Youtube" className="social-icon" />
             </a>
-            <a href="https://wa.me/+919908267729" target="_blank" rel="noopener noreferrer">
-              <img src={whatsapp} alt="Whatsapp" />
+            <a className="social-icon-wrapper" href="https://wa.me/+919908267729" target="_blank" rel="noopener noreferrer">
+              <img src={whatsapp} alt="Whatsapp" className="social-icon" />
             </a>
-            <a href="mailto:solasta@iiitk.ac.in">
-              <img src={mailIcon} alt="Email" />
+            <a className="social-icon-wrapper" href="mailto:solasta@iiitk.ac.in">
+              <img src={mailIcon} alt="Email" className="social-icon" />
             </a>
           </div>
         </div>
       </div>
-      <div className="copyright flex flex-col items-center justify-center">
-        <div className="flex flex-col lg:flex-row gap-2">
-          <p className="">  Copyright ©️ 2025, IIITDMK All rights reserved.</p>
-          <p className="flex gap-2">
-          <a className="contact-links flex gap-1" href="https://www.linkedin.com/in/sohaibaftab/" target="_blank" rel="noopener noreferrer">
-            Designed <Icon icon="mdi:linkedin" style={{color:"#fff", fontSize:"1.5rem"}}/>
-          </a>
-            and
-            <a className="contact-links flex gap-1" href="https://www.linkedin.com/in/jvkousthub/" target="_blank" rel="noopener noreferrer">
-              Developed <Icon icon="mdi:linkedin" style={{color:"#fff", fontSize:"1.5rem"}}/>
-            </a>
-            <a className="contact-links flex gap-1" href="https://www.linkedin.com/in/anjani-kumar-s/" target="_blank" rel="noopener noreferrer">
-              <Icon icon="mdi:linkedin" style={{color:"#fff", fontSize:"1.5rem"}}/>
-            </a>
-            by Web Team Solasta
-          </p>
-
-
+      
+      <div className="copyright-section">
+        <div className="copyright-content">
+          <p className="copyright-text">Copyright ©️ 2025, IIITDMK All rights reserved.</p>
+          <div className="developer-credits">
+           
+              <a className="team-link" href="https://www.linkedin.com/in/sohaibaftab/" target="_blank" rel="noopener noreferrer">
+                Designed <Icon icon="mdi:linkedin" className="linkedin-icon" />
+              </a>
+              {" and "}
+              <a className="team-link" href="https://www.linkedin.com/in/jvkousthub/" target="_blank" rel="noopener noreferrer">
+                Developed  <Icon icon="mdi:linkedin" className="linkedin-icon" />
+              </a>
+              <a className="team-link" href="https://www.linkedin.com/in/anjani-kumar-s/" target="_blank" rel="noopener noreferrer">
+                <Icon icon="mdi:linkedin" className="linkedin-icon" />
+              </a>
+              {" by Web Team Solasta"}
+            
+          </div>
         </div>
-
-
       </div>
-
-    </>
+    </footer>
   );
 }

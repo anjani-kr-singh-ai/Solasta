@@ -1,14 +1,21 @@
-/* General Page Styling */
 .RegisterPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     padding-top: 96px;
     padding-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.register-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* Responsive Width */
+
 @media screen and (min-width: 800px) {
     .RegisterPage {
         width: calc(100vw - 82px);
@@ -16,7 +23,7 @@
     }
 }
 
-/* Background Image */
+
 .hero-background-sign {
     position: fixed;
     top: 0;
@@ -27,7 +34,7 @@
     filter: brightness(0.7);
 }
 
-/* Section Below Hero */
+
 .below-register {
     display: flex;
     flex-direction: column;
@@ -36,7 +43,7 @@
     gap: 1.5rem;
 }
 
-/* Heading */
+
 .register-head {
     color: #ffffff;
     font-family: "Poppins", sans-serif;
@@ -53,7 +60,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* Form Styling */
+
 .register-form {
     padding: 2rem;
     display: flex;
@@ -177,5 +184,24 @@
     .register-form {
         padding: 1.2rem;
         width: 90%;
+    }
+}
+
+.footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+        font-size: 12px;
     }
 }

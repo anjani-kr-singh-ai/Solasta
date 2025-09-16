@@ -1,4 +1,4 @@
-/*  Background for Events Page */
+
 .eventsPage {
     text-align: center;
     padding: 40px 20px;
@@ -7,7 +7,6 @@
     min-height: 100vh;
   }
   
-  /* Event Title */
   .event-head {
     font-size: 3rem;
     font-weight: bold;
@@ -16,7 +15,7 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   }
   
-  /* Categories */
+
   .categories {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +39,7 @@
     transform: scale(1.1);
   }
   
-  /* Events Container */
+
   .events-container {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +48,7 @@
     padding: 20px;
   }
   
-  /* Flip Card Effect */
+
   .flip-card {
     width: 320px;
     height: 400px;
@@ -66,12 +65,12 @@
     transition: transform 0.6s;
   }
   
-  /* Flip on Hover */
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Front & Back */
+  
   .flip-card-front,
   .flip-card-back {
     position: absolute;
@@ -82,7 +81,7 @@
     backface-visibility: hidden;
   }
   
-  /* Front Side */
+ 
   .flip-card-front {
     background: linear-gradient(145deg, #2a2a3b, #1a1a2b);
     display: flex;
@@ -163,4 +162,16 @@
     font-weight: bold;
     text-align: center;
     width: 80%;
+}
+
+/* Adjust the events container for mobile */
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .flip-card-inner {
+    flex-direction: column;
+  }
 }

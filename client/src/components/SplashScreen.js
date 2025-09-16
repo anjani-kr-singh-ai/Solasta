@@ -6,7 +6,6 @@ import './SplashScreen.css';
 const languages = [
 "Solasta '25",
 
-"సోలస్తా '25" ,// Telugu
 
 "सोलस्ता '25", // Hindi
 
@@ -26,7 +25,9 @@ const languages = [
 
 "ਸੋਲਸਤ੍ਰਾ '25", // Punjabi 
 
-"સોલસ્તા '25" // Gujarati 
+"સોલસ્તા '25", // Gujarati 
+
+"సోలస్తా '25" ,// Telugu
    
 ];
 

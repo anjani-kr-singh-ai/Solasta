@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from "react";
 import "./styles/Timer.css";
 import SectionHeader from "./SectionHeader";
+import { Link } from "react-router-dom";
 
 export default function Timer(props) {
-  const targetDate = "2025-03-15:00:00";
-
+  const targetDate = "2025-03-15T00:00:00"; 
+  
   const calculateTimeLeft = () => {
     const difference = new Date(targetDate) - new Date();
     if (difference <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
-
+    
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
       (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
+    
     return { days, hours, minutes, seconds };
   };
-
+  
+  const [section, setSection] = useState("timer");
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [previousTime, setPreviousTime] = useState(timeLeft);
   const [startRolling, setStartRolling] = useState(false);
@@ -111,7 +113,8 @@ export default function Timer(props) {
       </div>
       <div className="register-btn">
         <button className="styled-register-button">
-          Register Now
+        <Link to="/register" onClick={() => setSection("Register")} className={`nav-link ${section === 'Register' && 'active'}`} >
+          Register Now</Link>
         </button>
       </div>
     </div>
